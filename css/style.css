@@ -272,7 +272,7 @@ p{
 	font-weight: 600;
 	font-size: 1.8rem;
 }
-.contact-content>a,.contact-content>span{
+.contact-content>a{
 	line-height: 50px;
 }
 
