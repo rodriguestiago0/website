@@ -81,12 +81,18 @@ body{
 	width: 100%;
 	display: inline-block;
 	zoom: 1;
-	padding: 0 8em;
+	padding: 0 2em;
 	vertical-align: top;
 	letter-spacing: normal;
 	word-spacing: normal;
 	text-rendering: auto;
 	margin-top: -6em;
+}
+
+@media (min-width: 1000px) {
+	.main-content{
+		padding: 0 8em;
+	}
 }
 
 .header {
@@ -167,16 +173,6 @@ h1{
     text-align: center;
 }
 
-
-@media (min-width: 550px){
-    .offset-by-three.columns {
-        margin-left: 26%;
-    }
-    .offset-by-two.columns {
-        margin-left: 17.33333%;
-    }
-}
-
 .note{
 	color: #4a4a4a;
 	font-size: 1.5rem;
@@ -234,6 +230,10 @@ p{
 	color: #d24c4b;
 }
 
+.scale>span{
+	padding-right: 1px;
+}
+
 
 .language-detail:first-child{
 	margin-top: 0;
@@ -247,6 +247,10 @@ p{
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 1.5rem;
+}
+
+.contact .row{
+	margin-bottom: 1rem;
 }
 
 .contact-detail{
@@ -272,7 +276,7 @@ p{
 	font-weight: 600;
 	font-size: 1.8rem;
 }
-.contact-content>a,.contact-content>span{
+.contact-content>a{
 	line-height: 50px;
 }
 
@@ -331,4 +335,14 @@ a{
     column-break-inside: avoid;
     overflow: hidden;
     width: 100%;
+}
+
+
+@media (min-width: 550px){
+    .offset-by-three.columns {
+        margin-left: 26%;
+    }
+    .offset-by-two.columns {
+        margin-left: 17.33333%;
+	}
 }
