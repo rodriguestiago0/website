@@ -101,7 +101,7 @@ body{
 }
 
 .special-span{
-	line-height: 50px;
+	line-height: normal;
 }
 
 .header {
@@ -131,6 +131,7 @@ body{
 	background-color: #d24c4b;
 	padding: 0.2rem 0.6rem;
 	border-radius: 5px;
+	font-size: 1.4rem;
 }
 
 .header:after{
@@ -395,6 +396,13 @@ a{
 
 	.nine.columns {
     	width: 74.0%;
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 362px) {
+	.special-span{
+		line-height: 50px;
 	}
 }
 
